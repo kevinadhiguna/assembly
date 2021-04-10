@@ -11,5 +11,8 @@ A collection of Assembly codes ⚙️
 6. Now, your assembly program is an executable file. Run it with : `./<your_assembly_code_filename>` (like `./helloworld`)
 7. See the output of your Assembly program, congrats!
 
+### Example :<br>
+<img src="https://i.ibb.co/SsZMSBr/how-to-run-assembly.png" />
+
 ## References :
 - [How can I compile & run assembly in Ubuntu 18.04? - Stackoverflow](https://askubuntu.com/questions/1064619/how-can-i-compile-run-assembly-in-ubuntu-18-04)
