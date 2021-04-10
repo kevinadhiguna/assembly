@@ -10,3 +10,6 @@ A collection of Assembly codes ⚙️
 5. Link the object file nasm produced into an executable file : `ld -s -o <your_assembly_code_filename> <output_filename>.o` (for example, `ld -s -o helloworld helloworld.o`)
 6. Now, your assembly program is an executable file. Run it with : `./<your_assembly_code_filename>` (like `./helloworld`)
 7. See the output of your Assembly program, congrats!
+
+## References :
+- [How can I compile & run assembly in Ubuntu 18.04? - Stackoverflow](https://askubuntu.com/questions/1064619/how-can-i-compile-run-assembly-in-ubuntu-18-04)
