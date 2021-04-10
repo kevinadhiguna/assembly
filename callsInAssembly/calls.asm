@@ -5,7 +5,7 @@ section .text
   global _start
 
 _start:
-  call _displayCalls
+  call _displayCalls    ; <- 'call' and 'jmp' are essentially the same. However, when the call is used, the original position of the call was made can be returned to using 'ret'.
 
   mov rax, 60
   mov rdi, 0
