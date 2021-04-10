@@ -1,5 +1,5 @@
 section .data
-  text  db  "Welcome to Assembly!", 10 ; <- 'db' means define bytes, to create a data, in this case, it is a sentence/string. '10' means brakline or '\n'.
+  text  db  "Welcome to Assembly!", 10 ; <- 'db' means define bytes, to create a data, in this case, it is a sentence/string. '10' means brakline or '\n'. 'text' in this line acts as a memory address.
 
 section .text
   global _start   ; <- 'global' is used when you want the linker to be able to know the address of a label. In this program, the label is '_start'.
@@ -8,8 +8,8 @@ section .text
 _start:
   ; Below is 'sys_write' section
   mov rax, 1    ; <- 'sys_write' has an ID of 1. It comes like that by default.
-  mov rdi, 1
-  mov rsi, text
+  mov rdi, 1    ; <- '1' is Standard Output. '0' is Standard Input. '2' is Standard Error.
+  mov rsi, text ; <- Actually this is the location of string to write (Buffer). The location of the string, or memory, in this program, is 'text' (described above).
   mov rdx, 21   ; <- '21' is the max characters you can print out in this program. If you notice, 'Welcome to Assembly!' consists of 20 characters. Therefore, it must not be less than 21. (if you put '20', the output is 'Welcome to Assembly!%').
   syscall       ; <- A program requests a service from the kernel with syscall (system call).
 
