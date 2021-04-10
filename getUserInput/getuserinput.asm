@@ -1,5 +1,5 @@
 section .data
-  ask db "What's your name ?"   ; <- the first text that will be printed as a question.
+  ask db "What's your name ? "   ; <- the first text that will be printed as a question.
   greet db "Hello, "              ; <- a text that will be displayed after one inputs its name. 
 
 ; '.bss' section is used to reserve data
