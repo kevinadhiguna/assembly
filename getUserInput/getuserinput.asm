@@ -38,7 +38,7 @@ _getName:
 _printGreeting:
   mov rax, 1
   mov rdi, 1
-  mov rsi, name
+  mov rsi, greet
   mov rdx, 7
   syscall
   ret
