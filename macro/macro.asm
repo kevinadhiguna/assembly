@@ -8,7 +8,7 @@ section .text
 
 ; == a 'printDigit' macro
 %macro printDigit 1   ; <- 'printDigit' is the name of macro. While '1' beside 'printDigit' is the number of arguments that will be passed to the macro.
-  mov rax, %1
+  mov rax, %1         ; <- '%1' will be replaced by an argument
   call _printDigit
 %endmacro
 
