@@ -12,6 +12,13 @@ section .text
   call _printDigit
 %endmacro
 
+; == a 'printDigitSum' macro to sum up two numbers (less than 10 in total)
+%macro printDigitSum 2
+  mov rax, %1
+  add rax, %2
+  call _printDigit
+%endmacro
+
 ; == an 'exit' macro
 %macro exit 0
   mov rax, 60
@@ -20,8 +27,9 @@ section .text
 %endmacro
 
 _start:
-  printDigit 3      ; <- This will print      ; <- This will print '3' '3'
-  printDigit 4      ; <- This will print '4'
+  printDigit 3        ; <- This will print '3'
+  printDigit 4        ; <- This will print '4'
+  printDigitSum 3,4   ; <- This will sum up 3 and 4. Hence, this will print 7 (3+4 = 7).
 
   exit
 
