@@ -37,7 +37,7 @@ A collection of Assembly codes ⚙️
 
 ## How to Run Assembly (x86_64 / 64-bit Linux) :
 1. Open terminal
-2. Install `nasm`, general-purpose x86 assembler, with `sudo apt install nasm`.
+2. Install `nasm`, general-purpose x86 assembler, with `sudo apt update && sudo apt install nasm`.
 3. Create a new assmbly program : `nano <your_assembly_code_filename>.asm`. <br>(for instance, `nano helloworld.asm`)
 4. Assemble the program : `nasm -f elf64 <your_assembly_code_filename>.asm`. <br>(such as `nasm -f elf64 helloworld.asm`)
 5. Link the object file nasm produced into an executable file : `ld -s -o <your_assembly_code_filename> <output_filename>.o`. <br>(for example, `ld -s -o helloworld helloworld.o`)
