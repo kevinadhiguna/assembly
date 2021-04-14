@@ -48,4 +48,5 @@ A collection of Assembly codes ⚙️
 <img src="https://i.ibb.co/SsZMSBr/how-to-run-assembly.png" />
 
 ## References :
+- [Tutorial: How to run 16-bits NASM on Linux](https://forum.nasm.us/index.php?topic=1297.0)
 - [How can I compile & run assembly in Ubuntu 18.04? - Stackoverflow](https://askubuntu.com/questions/1064619/how-can-i-compile-run-assembly-in-ubuntu-18-04)
