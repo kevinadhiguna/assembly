@@ -13,9 +13,23 @@ A collection of Assembly codes ⚙️
 
 5. Open `~/.dosbox` directory and open `dosbox-0.74-3.conf` file inside the `~/.dosbox` file. It is not mandatory but recommended to create a backup file of the original `dosbox-0.74-3.conf` file with `cp ~/.dosbox/dosbox-0.74-3.conf ~/.dosbox/dosbox-0.74-3.conf.bak`. However if you do so, please copy again the entire text of `dosbox-0.74-3.conf` inside the extracted dos.zip folder.
 
-6. Paste the copied text to `~/.dosbox/dosbox-0.74-3.conf`.
+6. Paste the copied text to `~/.dosbox/dosbox-0.74-3.conf`. The main purpose to copy the configuration file is the `autoexec` section. Here is how the `autoexec` section should look when placing the extracted dos.zip as `~/dos` directory.
+
+<img src="https://i.imgur.com/MhQHInc.png" />
+
+The rest sections do not really matters.
 
 7. Open terminal and run `dosbox`.
+
+8. It will mount the `CODE` directory by default. Next, run `hello.asm` with `nasm -f bin -o hello.com hello.asm`.
+
+9. Execute `hello.com.
+
+Here is how step 8 and 9 look :
+
+<img src="https://i.imgur.com/zEUw5IU.png" />
+
+Great, you have successfully executed an Assembly program 🎉
 
 ## How to Run Assembly (16 bit with DOSBox in Linux) - 2 (alternative) :
 1. Open terminal.
