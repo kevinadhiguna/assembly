@@ -2,7 +2,36 @@
 
 A collection of Assembly codes ⚙️
 
-## How to Run Assembly (16 bit with DOSBox in Linux) :
+## How to Run Assembly (16 bit with DOSBox in Linux) - 1 :
+1. Download [dos.zip](https://drive.google.com/file/d/1MoeJyAe13s28rdD8PHy8fXEqFd2udhZQ/view).
+
+2. Extract dos.zip to `~` (`home/<username>`) directory. As a result it will look like this : `/home/<username>/dos`.
+
+3. Open the extracted folder and open `dosbox-0.74-3.conf` file.
+
+4. Copy entire text in `dosbox-0.74-3.conf` file.
+
+5. Open `~/.dosbox` directory and open `dosbox-0.74-3.conf` file inside the `~/.dosbox` file. It is not mandatory but recommended to create a backup file of the original `dosbox-0.74-3.conf` file with `cp ~/.dosbox/dosbox-0.74-3.conf ~/.dosbox/dosbox-0.74-3.conf.bak`. However if you do so, please copy again the entire text of `dosbox-0.74-3.conf` inside the extracted dos.zip folder.
+
+6. Paste the copied text to `~/.dosbox/dosbox-0.74-3.conf`. The main purpose to copy the configuration file is the `autoexec` section. Here is how the `autoexec` section should look when placing the extracted dos.zip as `~/dos` directory.
+
+<img src="https://i.imgur.com/MhQHInc.png" />
+
+The rest sections do not really matters.
+
+7. Open terminal and run `dosbox`.
+
+8. It will mount the `CODE` directory by default. Next, run `hello.asm` with `nasm -f bin -o hello.com hello.asm`.
+
+9. Execute `hello.com.
+
+Here is how step 8 and 9 look :
+
+<img src="https://i.imgur.com/zEUw5IU.png" />
+
+Great, you have successfully executed an Assembly program 🎉
+
+## How to Run Assembly (16 bit with DOSBox in Linux) - 2 (alternative) :
 1. Open terminal.
 
 2. Install DOSBox with `sudo apt update && sudo apt install dosbox`.
@@ -50,3 +79,5 @@ A collection of Assembly codes ⚙️
 ## References :
 - [Tutorial: How to run 16-bits NASM on Linux](https://forum.nasm.us/index.php?topic=1297.0)
 - [How can I compile & run assembly in Ubuntu 18.04? - Stackoverflow](https://askubuntu.com/questions/1064619/how-can-i-compile-run-assembly-in-ubuntu-18-04)
+
+[![Visits Badge](https://badges.pufler.dev/visits/kevinadhiguna/assembly)](https://github.com/kevinadhiguna)
