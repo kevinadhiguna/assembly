@@ -80,4 +80,5 @@ Great, you have successfully executed an Assembly program 🎉
 - [Tutorial: How to run 16-bits NASM on Linux](https://forum.nasm.us/index.php?topic=1297.0)
 - [How can I compile & run assembly in Ubuntu 18.04? - Stackoverflow](https://askubuntu.com/questions/1064619/how-can-i-compile-run-assembly-in-ubuntu-18-04)
 
-[![Visits Badge](https://badges.pufler.dev/visits/kevinadhiguna/assembly)](https://github.com/kevinadhiguna)
+
+![Hello !](https://api.visitorbadge.io/api/VisitorHit?user=kevinadhiguna&repo=assembly&label=thanks%20for%20dropping%20in%20!&labelColor=%23000000&countColor=%23FFFFFF)
