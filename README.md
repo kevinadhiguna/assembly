@@ -23,7 +23,7 @@ The rest sections do not really matters.
 
 8. It will mount the `CODE` directory by default. Next, run `hello.asm` with `nasm -f bin -o hello.com hello.asm`.
 
-9. Execute `hello.com.
+9. Execute `hello.com`.
 
 Here is how step 8 and 9 look :
 
