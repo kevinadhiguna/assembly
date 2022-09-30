@@ -2,7 +2,10 @@
 
 A collection of Assembly codes ⚙️
 
+<br />
+
 ## How to Run Assembly (16 bit with DOSBox in Linux) - 1 :
+
 1. Download [dos.zip](https://drive.google.com/file/d/1C60OBi29PHdiecfUz7cjZ0x6llbr0Ixe/view).
 
 2. Extract dos.zip to `~` (`home/<username>`) directory. As a result it will look like this : `/home/<username>/dos`.
@@ -31,7 +34,10 @@ Here is how step 8 and 9 look :
 
 Great, you have successfully executed an Assembly program 🎉
 
+<br />
+
 ## How to Run Assembly (16 bit with DOSBox in Linux) - 2 (alternative) :
+
 1. Open terminal.
 
 2. Install DOSBox with `sudo apt update && sudo apt install dosbox`.
@@ -64,21 +70,36 @@ Great, you have successfully executed an Assembly program 🎉
 12. Run the executable file, with `{FILENAME}.com` such as `hello.com`. <br>
 <img src="https://i.ibb.co/tPC6XwW/run-assembly-3.png" /><br>
 
+<br />
+
 ## How to Run Assembly (x86_64 / 64-bit Linux) :
+
 1. Open terminal
+
 2. Install `nasm`, general-purpose x86 assembler, with `sudo apt update && sudo apt install nasm`.
+
 3. Create a new assmbly program : `nano <your_assembly_code_filename>.asm`. <br>(for instance, `nano helloworld.asm`)
+
 4. Assemble the program : `nasm -f elf64 <your_assembly_code_filename>.asm`. <br>(such as `nasm -f elf64 helloworld.asm`)
+
 5. Link the object file nasm produced into an executable file : `ld -s -o <your_assembly_code_filename> <output_filename>.o`. <br>(for example, `ld -s -o helloworld helloworld.o`)
+
 6. Now, your assembly program is an executable file. Run it with : `./<your_assembly_code_filename>` <br>(like `./helloworld`)
+
 7. See the output of your Assembly program, congrats!
 
-### Example :<br>
+<br />
+
+### Example :
+
 <img src="https://i.ibb.co/SsZMSBr/how-to-run-assembly.png" />
+
+<br />
 
 ## References :
 - [Tutorial: How to run 16-bits NASM on Linux](https://forum.nasm.us/index.php?topic=1297.0)
 - [How can I compile & run assembly in Ubuntu 18.04? - Stackoverflow](https://askubuntu.com/questions/1064619/how-can-i-compile-run-assembly-in-ubuntu-18-04)
 
+<br />
 
 ![Hello !](https://api.visitorbadge.io/api/VisitorHit?user=kevinadhiguna&repo=assembly&label=thanks%20for%20dropping%20in%20!&labelColor=%23000000&countColor=%23FFFFFF)
